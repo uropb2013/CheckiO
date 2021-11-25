@@ -1,13 +1,13 @@
 def end_zeros(num: int) -> int:
     # your code here
+    numb = 0
     if num != 0:
         string = str(num)
-        numb = 0
         while string[-1-numb] == "0":
             numb += 1
-        return numb
     else:
-        return 1
+        numb += 1
+    return numb
 
 
 if __name__ == '__main__':
