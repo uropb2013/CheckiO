@@ -8,7 +8,7 @@ def end_zeros(num: int) -> int:
     else:
         numb += 1
     return numb
-
+qwf
 
 if __name__ == '__main__':
     print("Example:")
