@@ -1,13 +1,13 @@
 def nearest_value(values: set, one: int) -> int:
     # your code here
-    set_list = list(values)
-    set_list.sort()
-    min_value = set_list.pop(0)
+    min_value = values.pop()
     min_difference = one - min_value
-    for i in set_list:
+    for i in values:
         if abs(one - i) < abs(min_difference):
             min_value = i
             min_difference = one - min_value
+        elif abs(one - i) == abs(min_difference):
+            min_value = min(min_value, i)
     return min_value
 
 
